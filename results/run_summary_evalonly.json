@@ -1,0 +1,52 @@
+{
+  "base_model_name": "openai/whisper-large-v3",
+  "adapter_dir": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/best_adapter",
+  "language": "lithuanian",
+  "task": "transcribe",
+  "run_dir": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1",
+  "n_eval_samples": 2051,
+  "baseline_metrics": {
+    "wer": 0.34702248066040187,
+    "cer": 0.15395175676723805,
+    "sem": 0.841702938079834,
+    "ped": 0.2875637940290188,
+    "kr": 0.549042752694298,
+    "kr_coverage": 0.9780594831789371,
+    "n_samples": 2051,
+    "prediction_errors": 0,
+    "mean_pred_len": 60.15894685519259,
+    "median_pred_len": 36.0,
+    "empty_predictions": 0,
+    "exact_match_rate": 0.14383227693807898
+  },
+  "finetuned_metrics": {
+    "wer": 0.21161933440631328,
+    "cer": 0.057736756379430695,
+    "sem": 0.9218896627426147,
+    "ped": 0.06812479821889451,
+    "kr": 0.7465300526990457,
+    "kr_coverage": 0.9780594831789371,
+    "n_samples": 2051,
+    "prediction_errors": 0,
+    "mean_pred_len": 62.65724037055095,
+    "median_pred_len": 39.0,
+    "empty_predictions": 0,
+    "exact_match_rate": 0.33447098976109213
+  },
+  "delta": {
+    "wer_improvement": 0.13540314625408859,
+    "cer_improvement": 0.09621500038780735,
+    "sem_improvement": 0.08018672466278076,
+    "ped_improvement": 0.21943899581012433,
+    "kr_improvement": 0.19748730000474768
+  },
+  "used_test_manifest": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/manifest_test.csv",
+  "extra_outputs": {
+    "baseline_segment_metrics": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/baseline_segment_metrics_evalonly.csv",
+    "finetuned_segment_metrics": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/finetuned_segment_metrics_evalonly.csv",
+    "metrics_by_age_group": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/metrics_by_age_group_evalonly.csv",
+    "metrics_by_recording_type": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/metrics_by_recording_type_evalonly.csv",
+    "metrics_by_gender": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/metrics_by_gender_evalonly.csv",
+    "metrics_by_lossy": "/scratch/lustre/home/juez8744/whisper-ft/results/whisper-large-v3-lt-lora-strategy1/metrics_by_lossy_evalonly.csv"
+  }
+}
